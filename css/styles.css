@@ -825,4 +825,70 @@ footer {
     .delivery-feature {
         padding: 1.5rem;
     }
+}
+
+/* Phone Links */
+.phone-link {
+    color: inherit;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    display: inline-block;
+    padding: 0.2rem 0;
+    position: relative;
+}
+
+.phone-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: var(--accent-color);
+    transition: width var(--transition-normal);
+}
+
+.phone-link:hover {
+    color: var(--accent-color);
+}
+
+.phone-link:hover::after {
+    width: 100%;
+}
+
+.phone-link:active {
+    transform: scale(0.98);
+}
+
+/* Email Links */
+.email-link {
+    color: inherit;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+    display: inline-block;
+    padding: 0.2rem 0;
+    position: relative;
+}
+
+.email-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: var(--accent-color);
+    transition: width var(--transition-normal);
+}
+
+.email-link:hover {
+    color: var(--accent-color);
+}
+
+.email-link:hover::after {
+    width: 100%;
+}
+
+.email-link:active {
+    transform: scale(0.98);
 } 
